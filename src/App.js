@@ -4,6 +4,7 @@ import Home from "./components/Home";
 import Products from "./components/Products";
 import Header from "./components/layout/Header";
 import ProductDetails from "./components/ProductDetails";
+import Login from "./components/Login";
 
 function App() {
   return (
@@ -25,6 +26,10 @@ function App() {
           {/* path to product details */}
           <Route path="/products/:id">
             <ProductDetails />
+          </Route>
+          {/* path to login */}
+          <Route path="/login">
+            <Login />
           </Route>
         </Switch>
       </main>
