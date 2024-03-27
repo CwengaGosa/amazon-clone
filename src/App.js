@@ -5,6 +5,7 @@ import Products from "./components/Products";
 import Header from "./components/layout/Header";
 import ProductDetails from "./components/ProductDetails";
 import Login from "./components/Login";
+import NotFound from "./components/NotFound";
 
 function App() {
   return (
@@ -30,6 +31,10 @@ function App() {
           {/* path to login */}
           <Route path="/login">
             <Login />
+          </Route>
+          {/* path when redirecting to a non-existent page */}
+          <Route path="*">
+            <NotFound />
           </Route>
         </Switch>
       </main>
